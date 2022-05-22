@@ -70,4 +70,27 @@ func main() {
 		}()
 	}
 
+	blockWorkersWg := make(chan struct{})
+	go func() {
+		workersWg.Wait()
+		close(blockWorkersWg)
+	}()
+
+	var displayWg sync.WaitGroup
+
+	displayWg.Add(1)
+	go func() {
+		for {
+			select {
+			case r := <-results:
+				fmt.Printf("%v[%v]:%v\n", r.Path, r.LineNum, r.Line)
+			case <-blockWorkersWg:
+				if len(results) == 0 {
+					displayWg.Done()
+					return
+				}
+			}
+		}
+	}()
+	displayWg.Wait()
 }
