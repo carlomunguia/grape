@@ -1,4 +1,4 @@
-# grape
+# grape 🍇
 grape: a multi-threaded grep implementation written in Go
 
 ## clone grape
