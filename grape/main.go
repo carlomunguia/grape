@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"grape/worker"
-	"grape/worklist"
 	"os"
 	"path/filepath"
 	"sync"
+
+	"github.com/carlomunguia/grape/worker"
+	"github.com/carlomunguia/grape/worklist"
 
 	"github.com/alexflint/go-arg"
 )
