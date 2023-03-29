@@ -1,6 +1,6 @@
 # grape
 
-grape: a multi-threaded grep implementation written in Go
+grape: a multi-threaded grep implementation written in Go, for your coding delight
 
 ## init your module
 
