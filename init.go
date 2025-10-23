@@ -3,12 +3,7 @@
  * File: init.go
  */
 
-package lib
+package main
 
-import (
-	"fmt"
-)
-
-func init() {
-	fmt.Println("[grape is] initializing ...")
-}
+// Package initialization
+// Currently no initialization is required
