@@ -1,5 +1,9 @@
 # 🍇 grape
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/carlomunguia/grape)](https://goreportcard.com/report/github.com/carlomunguia/grape)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/carlomunguia/grape)](https://github.com/carlomunguia/grape)
+
 A fast, concurrent file search tool written in Go - like `grep`, but concurrent and easier to use.
 
 ## Features

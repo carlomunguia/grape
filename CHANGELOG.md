@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-10-23
 
 ### Added
+
 - Concurrent file search with configurable worker pool
 - Case-insensitive search option (`-i` flag)
 - Colorized output with option to disable (`-c` flag)
@@ -21,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Context-aware cancellation support
 
 ### Features
+
 - Thread-safe work queue for distributing tasks
 - Configurable number of concurrent workers (default: 10)
 - Colored output: green paths, yellow line numbers
@@ -28,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Zero external dependencies (except CLI argument parsing)
 
 ### Performance
+
 - Concurrent directory discovery
 - Parallel file processing
 - Efficient channel-based communication
